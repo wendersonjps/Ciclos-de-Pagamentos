@@ -31,7 +31,7 @@ module.exports = {
         loaders: [{
             test: /.js[x]?$/,
             loader: 'babel-loader',
-            exclude: '/node_modules',
+            exclude: /node_modules/,
             query: {
                 presets: ['es2015', 'react'],
                 plugins: ['transform-object-rest-spread']
@@ -42,7 +42,7 @@ module.exports = {
             loader: ExtractTextPlugin.extract('style-loader', 'css-loader')
         },
         {
-            test: /\.woff|.woff2|.ttf|.eot|.svg|.png.jpg*.*$/,
+            test: /\.woff|.woff2|.ttf|.eot|.svg|.png|.jpg*.*$/,
             loader: 'file'
         }]
     }
