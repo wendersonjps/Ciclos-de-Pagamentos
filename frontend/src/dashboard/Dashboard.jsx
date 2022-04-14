@@ -1,9 +1,19 @@
-/* import React from 'react' */
+/* import React, { Component } from 'react' */
 
-export default function Dashboard(props) {
-    return (
-        <div>
-            <h1>Dashboard</h1>
-        </div>
-    )
+import ContentHeader from '../common/template/ContentHeader'
+import Content from '../common/template/Content'
+
+class Dashboard extends Component {
+    render() {
+        return (
+            <div>
+                <ContentHeader title='Dashboard' subtitle='Versão 1.0' />
+                <Content>
+                    Dashboard
+                </Content>
+            </div>
+        )
+    }
 }
+
+export default Dashboard
