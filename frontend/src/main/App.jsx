@@ -4,6 +4,7 @@ import '../common/template/dependencies'
 import Header from '../common/template/Header'
 import Sidebar from '../common/template/Sidebar'
 import Footer from '../common/template/Footer'
+import Routes from './routes'
 
 export default function App(props) {
     return (
@@ -11,7 +12,7 @@ export default function App(props) {
             <Header />
             <Sidebar />
             <div className="content-wrapper">
-                <h1>Content</h1>
+                <Routes />
             </div>
             <Footer />
         </div>
