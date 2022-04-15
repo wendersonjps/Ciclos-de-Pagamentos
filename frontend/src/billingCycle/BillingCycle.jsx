@@ -2,9 +2,11 @@
 
 import ContentHeader from '../common/template/ContentHeader'
 import Content from '../common/template/Content'
-import Tab from '../common/tab/Tabs'
+import Tabs from '../common/tab/Tabs'
 import TabsHeader from '../common/tab/TabsHeader'
-import TabContent from '../common/tab/TabContent'
+import TabsContent from '../common/tab/TabContent'
+import TabHeader from '../common/tab/TabHeader'
+
 
 class BillingCycle extends Component {
     render() {
@@ -14,11 +16,14 @@ class BillingCycle extends Component {
                 <Content>
                     <Tabs>
                         <TabsHeader>
-
+                            <TabHeader label='listar' icon='bars' target='tabList' />
+                            <TabHeader label='Incluir' icon='plus' target='tabCreate' />
+                            <TabHeader label='Alterar' icon='pencil' target='tabUpdate' />
+                            <TabHeader label='Excluir' icon='trash-o' target='tabDelete' />
                         </TabsHeader>
-                        <TabContent>
-                            
-                        </TabContent>
+                        <TabsContent>
+
+                        </TabsContent>
                     </Tabs>
                 </Content>
             </div>
