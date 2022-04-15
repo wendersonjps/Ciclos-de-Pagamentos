@@ -1,9 +1,19 @@
-/* import React from 'react' */
+/* import React, { Component } from 'react' */
 
-export default function BillingCycle(props) {
-    return (
-        <div>
-            <h1>Ciclo de Pagamentos</h1>
-        </div>
-    )
+import ContentHeader from '../common/template/ContentHeader'
+import Content from '../common/template/Content'
+
+class BillingCycle extends Component {
+    render() {
+        return (
+            <div>
+                <ContentHeader title='Ciclos de Pagamentos' subtitle='Cadastro' />
+                <Content>
+
+                </Content>
+            </div>
+        )
+    }
 }
+
+export default BillingCycle
