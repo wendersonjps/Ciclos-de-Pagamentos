@@ -1,4 +1,4 @@
-/* import Ract from 'react' */
+import Ract from 'react'
 
 export default function If(props) {
     if (props.teste) {

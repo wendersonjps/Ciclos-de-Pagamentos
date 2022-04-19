@@ -1,6 +1,6 @@
-/* import React, { Component } from 'react'
+import React, { Component } from 'react'
 import { bindActionCreators } from 'redux' 
-import { connect } from 'react-redux' */
+import { connect } from 'react-redux'
 
 import If from '../operator/If'
 import { selectTab } from './tabActions'

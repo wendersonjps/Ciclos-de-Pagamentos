@@ -1,4 +1,5 @@
-/* import React from 'react' */
+import React from 'react'
+
 import MenuItem from './MenuItem'
 import MenuTree from './MenuTree'
 
